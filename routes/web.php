@@ -1,5 +1,5 @@
 <?php
-use Symfony\Component\Routing\Annotation\Route;
+//use Symfony\Component\Routing\Annotation\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,8 +12,4 @@ use Symfony\Component\Routing\Annotation\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('permiso', 'PermisoController@index');
+Route::get('/', 'InicioController@index');
